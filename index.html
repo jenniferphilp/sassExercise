@@ -1,0 +1,112 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="sass/css/mystyles.css">
+
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <div class="navbar-container navbar">
+                <div class="fake-logo navbar-header col-md-3 col-xs-5 col-xs-offset-1">
+                    <h1 class="text-center main-title-logo">MY LOGO</h1>
+                </div> 
+                <div class="desktop-navigation navigation-links navbar-right">
+                    <ul class="nav nav-tabs text-center">
+                        <li class="nav-item active"><a href="#"><h4>Active</h4></a></li>
+                        <li class="nav-item"><a href="#"><h4>About Us</h4></a></li>
+                    </ul>
+                </div>   
+                <div class="mobile-navigation">
+                    <button class="mobile-nav-button"><span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span></button>
+                    <div class="mobile-navigation-content topnav" id="myTopnav">
+                        <ul>
+                            <li><a href="#" class="active">Active Mobile Button</a></li>
+                            <li><a href="#">Mobile Button</a></li>
+                        </ul>         
+                    </div>
+                </div>    
+            </div> 
+      
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <div class="main-content row">
+                <div class="col-md-5 col-md-offset-1 profile-card">
+                    <div class="profile-main-content">
+                        <h4 class="profile-title"><span>Your Profile</span></h4>
+                        <div class="personal-info">
+                            <div class="fake-profile-pic col-xs-2"></div>
+                            <div class="fake-profile-info col-xs-8">
+                                <h4>Mr. First Name</h4>
+                                <p>214 Address Ave.</p>
+                                <p>Toronto, ON </p>
+                                <p>M4H 2r6</p>
+                                <p>Tel. 416-777-4565</p>
+                            </div>    
+                        </div>    
+                    </div>    
+                </div>          
+                <div class="col-md-5 profile-card">
+                    <div class="profile-main-content">
+                        <h4 class="profile-title"><span>Your Profile</span></h4>
+                        <div class="personal-info">
+                            <div class="fake-profile-pic col-xs-2"></div>
+                            <div class="fake-profile-info col-xs-7">
+                                <h4>Mr. First Name</h4>
+                                <p>214 Address Ave.</p>
+                                <p>Toronto, ON </p>
+                                <p>M4H 2r6</p>
+                                <p>Tel. 416-777-4565</p>
+                            </div>    
+                        </div>    
+                    </div>
+                </div> 
+                <div class="col-md-10 col-md-offset-1 button-container">
+                    <div class="col-md-4">
+                        <button type="button" class="btn btn-primary btn-block button-main">
+                            <span class="glyphicon glyphicon-file" aria-hidden="true"></span>
+                            Button
+                        </button>
+                    </div>    
+                    <div class="col-md-4">
+                        <button type="button" class="btn btn-primary btn-block button-main ">
+                            <span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
+                            Button
+                        </button>
+                    </div>
+                    <div class="col-md-4">
+                        <button type="button" class="btn btn-primary btn-block button-main ">
+                            <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+                            Button
+                        </button>
+                    </div>
+                </div>         
+            </div> 
+        </div>   
+    </main>    
+
+  
+</body>
+
+<script>
+
+$(document).ready(function(){
+    $(".mobile-nav-button").click(function(){
+       $(".mobile-navigation-content").toggle(100);
+    });
+});
+</script>    
+
+</html>

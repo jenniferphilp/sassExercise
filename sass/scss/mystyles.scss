@@ -1,0 +1,126 @@
+$grey-background-color: #E0E0E0;
+$small-margin: 4%; 
+$main-blue-color: #5DADE2;
+
+/*navigation styles -------------------------------------------------------------------------------------------*/
+.navbar-container{ 
+     margin-bottom: 0;
+     .fake-logo{
+        background-color: $grey-background-color;
+        margin: $small-margin;
+        color: $main-blue-color;
+        .main-title-logo{
+                margin-top:7%;
+            }
+        }
+     .desktop-navigation{
+         @media only screen and (max-width: 480px) {
+             display:none;
+         }
+     }   
+     .navigation-links{
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        .nav-tabs {
+            li.active{
+                a {
+                    background-color: $grey-background-color;
+                    border-bottom: 10px solid $main-blue-color;
+                    border-left:none;
+                    border-right:none;
+                }
+            } li{
+                a{
+                    color: #555;
+                    height:110px;
+                    width:100px;
+                    padding-top:30%;
+                }
+            }
+        }
+    }
+    .mobile-navigation{
+    @media screen and (min-width: 480px) {
+        display:none;
+    }
+    .mobile-nav-button{
+        position: absolute;
+        top: 50px;
+        right: 10px;
+        font-size: 20pt;
+        color: $main-blue-color;
+        background-color: $grey-background-color;
+        border:none;
+    }
+    .mobile-navigation-content{
+        display:none;
+        position: fixed;
+        z-index: 100;
+        top: 100px;
+        width: 100%;
+        opacity:0.8;
+            ul {
+                padding:0;
+                list-style-type:none;
+            }
+            li {
+                a {
+                    float: left;
+                    width: 90%; 
+                    color: #f2f2f2;
+                    padding: 14px 16px;
+                    font-size: 20px;
+                    border-bottom: 1px solid white;
+                    background-color: black;
+                }
+                a.active{
+                    background-color: #003366;
+                }
+            }
+        }
+    } 
+}
+/*main content styles-------------------------------------------------------------------------------------------*/
+.main-content{
+    padding-top: $small-margin;
+    background-color: $grey-background-color;
+
+    .button-main{
+    background-color: #00FA9A;
+    border:none;
+    margin:1% 2% 5% 2%;
+    }  
+    .profile-card{
+    padding-bottom: $small-margin;
+        .profile-main-content{
+            margin: $small-margin;
+
+            .profile-title {
+                border-bottom: 1px solid #A9A9A9;
+                line-height: 0.1em;
+                margin: 10px 0 20px;
+                    span{
+                        background: $grey-background-color;
+                        padding-right:2%;
+                    }
+            }    
+            .personal-info {
+                background-color:white;
+                height:200px; 
+
+                .fake-profile-pic{
+                    margin: $small-margin;
+                    height: 80%;
+                    background-color: $main-blue-color;
+                }
+                .fake-profile-info{
+                    margin: $small-margin;
+                }
+                
+            }
+        }   
+    }
+}
+
+   
